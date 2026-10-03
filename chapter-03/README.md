@@ -266,62 +266,98 @@ $$
 ## ۳-۸. موازنه جرمی و بازیابی آهن
 
 موازنه جرمی و فلزی یکی از ابزارهای مهم برای اعتبارسنجی داده‌های QC، ابزار دقیق و نمونه‌برداری است.
-
 ### ۱. جرم خشک خوراک
 
 $$
-Feed\_Dry\_tph
-=
-Feed\_Wet\_tph
+M_f =
+M_{fw}
 \times
 \left(
-\frac{Feed\_Solids\_pct}{100}
+\frac{S_f}{100}
 \right)
 $$
+
+که در آن:
+
+* $M_f$: جرم خشک خوراک (`Feed_Dry_tph`)
+* $M_{fw}$: جرم تر خوراک (`Feed_Wet_tph`)
+* $S_f$: درصد جامد خوراک (`Feed_Solids_pct`)
+
+---
 
 ### ۲. بازده جرمی
 
 $$
-Mass\_Yield\_pct
-=
+Y_m =
 \left(
-\frac{Concentrate\_Dry\_tph}
-{Feed\_Dry\_tph}
+\frac{M_c}{M_f}
 \right)
-\times 100
+\times
+100
 $$
+
+که در آن:
+
+* $Y_m$: بازده جرمی (`Mass_Yield_pct`)
+* $M_c$: جرم خشک کنسانتره (`Concentrate_Dry_tph`)
+* $M_f$: جرم خشک خوراک (`Feed_Dry_tph`)
+
+---
 
 ### ۳. بازیابی آهن
 
 $$
-Fe\_Recovery\_pct
-=
+R_{Fe}=
 \frac{
-Concentrate\_Dry\_tph
+M_c
 \times
-Concentrate\_Fe\_pct
+G_c
 }{
-Feed\_Dry\_tph
+M_f
 \times
-Feed\_Fe\_pct
+G_f
 }
-\times 100
+\times
+100
 $$
+
+که در آن:
+
+* $R_{Fe}$: بازیابی آهن (`Fe_Recovery_pct`)
+* $M_c$: جرم خشک کنسانتره (`Concentrate_Dry_tph`)
+* $G_c$: عیار آهن کنسانتره (`Concentrate_Fe_pct`)
+* $M_f$: جرم خشک خوراک (`Feed_Dry_tph`)
+* $G_f$: عیار آهن خوراک (`Feed_Fe_pct`)
+
+---
 
 ### ۴. خطای موازنه آهن
-
 $$
-Fe\_Error\_pct
-=
+E_{Fe}=
 \frac{
-(Feed\_Dry \times Feed\_Fe)
--
-(Conc\_Dry \times Conc\_Fe + Tail\_Dry \times Tail\_Fe)
+\left(
+M_f G_f
+\right)-
+\left(
+M_c G_c+
+M_t G_t
+\right)
 }{
-Feed\_Dry \times Feed\_Fe
+M_f G_f
 }
-\times 100
+\times
+100
 $$
+
+که در آن:
+
+* $E_{Fe}$: خطای موازنه آهن (`Fe_Balance_Error_pct`)
+* $M_f$: جرم خشک خوراک (`Feed_Dry_tph`)
+* $G_f$: عیار آهن خوراک (`Feed_Fe_pct`)
+* $M_c$: جرم خشک کنسانتره (`Concentrate_Dry_tph`)
+* $G_c$: عیار آهن کنسانتره (`Concentrate_Fe_pct`)
+* $M_t$: جرم خشک باطله (`Tailings_Dry_tph`)
+* $G_t$: عیار آهن باطله (`Tailings_Fe_pct`)
 
 > **نکته مهم:** برای محاسبه موازنه فلزی، عیارهای Fe باید به یک مبنای یکسان، معمولاً درصد جرمی خشک، تبدیل شوند.
 
