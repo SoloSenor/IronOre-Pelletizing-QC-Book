@@ -1,0 +1,62 @@
+# Chapter 10: Machine Vision & Dynamic Image Analysis in Iron Ore Pelletizing Quality Control
+## کنترل کیفیت آنلاین گندله‌سازی سنگ‌آهن با بینایی ماشین و آنالیز دینامیک تصویر
+
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](04_Tutorial_Python.md)
+[![Minitab 21+](https://img.shields.io/badge/Minitab-21%2B-brightgreen.svg)](03_Tutorial_Minitab.md)
+[![Excel & Power Query](https://img.shields.io/badge/Excel-PowerQuery%202021%2F365-success.svg)](02_Tutorial_Excel_PowerQuery.md)
+[![Power BI](https://img.shields.io/badge/Power%20BI-DAX%20Dashboard-yellow.svg)](05_Tutorial_PowerBI_DAX.md)
+[![Dataset](https://img.shields.io/badge/Dataset-Chapter10__MachineVision__Pelletizing__Dataset.xlsx-orange.svg)](../Chapter10_MachineVision_Pelletizing_Dataset.xlsx)
+
+---
+
+### 📋 فهرست محتویات بسته آموزشی گیت‌هاب (Repository Contents)
+
+این مخزن شامل متن کامل مهندسی، مبانی تئوری، فرمولاسیون ریاضی و ۴ خودآموز گام‌به‌گام نرم‌افزاری بر پایه داده‌های صنعتی واقعی واحد گندله‌سازی (دیسک‌های پلت‌سازی Balling Discs، سرندهای غلتکی Roller Screens، و پایش زنگ‌زدگی/سایش لاینرها) می‌باشد:
+
+| ردیف | نام سند / خودآموز | فرمت / ابزار | شرح محتوا و اهداف کلیدی |
+| :--- | :--- | :--- | :--- |
+| **۱** | [**01_Chapter_Text.md**](01_Chapter_Text.md) | Markdown جامع مهندسی | متن کامل و مرجع فصل ۱۰: معماری بینایی صنعتی، سیستم نوری High-Speed Strobe، فیلتراسیون کانوولوشنال، تصحیح خطای تحدب پلت (Convex Bias Model)، اعتبارسنجی با الک استاندارد روتپ (Ro-Tap ISO 4701)، و پایش بینایی وضعیت لاینرها (CBM). |
+| **۲** | [**02_Tutorial_Excel_PowerQuery.md**](02_Tutorial_Excel_PowerQuery.md) | Excel & Power Query | پاک‌سازی خودکار خطاهای نوری با Power Query، محاسبه فرمول گردی ($Circularity$) و قطر معادل، پیاده‌سازی مدل رگرسیونی کالیبراسیون الک در اکسل، هشداردهی دینامیک توقف خط و منحنی تجمعی PSD. |
+| **۳** | [**03_Tutorial_Minitab.md**](03_Tutorial_Minitab.md) | Minitab Statistical Software | آنالیز خطای اندازه‌گیری سیستم بینایی (Gage R&R ANOVA)، نمودارهای کنترل I-MR و $ar{X}-S$ برای $d_{50}$ و ذرات ریزدانه، آزمون‌های نرمال بودن، و اعتبارسنجی رگرسیون خطی بینایی در برابر آزمایشگاه. |
+| **۴** | [**04_Tutorial_Python.md**](04_Tutorial_Python.md) | Python (Pandas, OpenCV, Scikit-Learn) | خط لوله اجرایی پردازش تصویر: بخش‌بندی Watershed، استخراج ویژگی‌های مورفولوژیک گندله، مدل رگرسیون Huber/Ridge برای کالیبراسیون الک آزمایشگاهی، و پایپ‌لاین تشخیص خطای آنلاین و ارسال آلرت. |
+| **۵** | [**05_Tutorial_PowerBI_DAX.md**](05_Tutorial_PowerBI_DAX.md) | Power BI Desktop & DAX | مدل‌سازی ستاره‌ای داده، کدنویسی سنجه‌های پیشرفته DAX (محاسبه درصد توزیع استاندارد ۹ تا ۱۶ میلی‌متر، میانگین متحرک ۲۴ ساعته $d_{50}$، شاخص وضعیت لاینرها RAR%، و طراحی داشبورد مانیتورینگ بلادرنگ). |
+
+---
+
+### 📂 ساختار فایل‌ها در مخزن (Repository Tree)
+
+```text
+Chapter10_GitHub_Package/
+│
+├── README.md                           # صفحه فرود، معرفی ساختار، پیوندها و راهنمای سریع
+├── 01_Chapter_Text.md                  # متن مرجع و جامع فصل ۱۰ همراه با فرمول‌ها و ارجاعات نرم‌افزاری
+├── 02_Tutorial_Excel_PowerQuery.md     # خودآموز جامع اکسل و پاورکوئری
+├── 03_Tutorial_Minitab.md              # خودآموز مهندسی کنترل کیفیت آماری در مینی‌تب
+├── 04_Tutorial_Python.md               # اسکریپت‌های پایتون و پایپ‌لاین پردازش تصویر
+├── 05_Tutorial_PowerBI_DAX.md          # خودآموز طراحی داشبورد هوش تجاری و کدنویسی DAX
+│
+└── dataset/
+    └── Chapter10_MachineVision_Pelletizing_Dataset.xlsx  # دیتاست آموزشی ۶ شیت شامل ۱۰,۰۰۰ گندله و ۳۳۶ رکورد ساعتی
+```
+
+---
+
+### 🏭 مشخصات دیتاست صنعتی همراه (Dataset Metadata)
+
+فایل اکسل داده‌های آموزشی در برگیرنده ۶ شیت استاندارد مهندسی است:
+1. `data_dictionary`: فرهنگ جامع داده‌ها، تعاریف فیزیکی، واحدها و استانداردهای متالوژیکی.
+2. `size_distribution_hourly`: ۳۳۶ رکورد ساعتی (۱۴ شبانه‌روز) پایش پیوسته دیسک پلت‌سازی با دوربین سرعت‌بالا شامل پارامترهای $d_{10}$، $d_{50}$، $d_{90}$، درصد ریزدانه ($<9	ext{ mm}$)، نرمال ($9-16	ext{ mm}$) و درشت‌دانه ($>16	ext{ mm}$)، فشار ایرنایف، گردی پلت و برچسب رویدادهای ویژه فرآیندی.
+3. `pellet_features_sample`: ویژگی‌های هندسی استخراج‌شده ۱۰,۰۰۰ پلت خام منفرد شامل مساحت ($Area$), محیط ($Perimeter$), قطر معادل ($D_{eq}$), قطرهای فِرِت ($Feret_{max}, Feret_{min}$), ضریب گردی ($Circularity$) و برچسب‌های کلاسیفیکیشن.
+4. `liner_roi_weekly`: داده‌های پایش ۲۶ هفته‌ای پایش تصویری سایش و زنگ‌زدگی ۴ زون بحرانی دیسک و شوت با متریک‌های نسبت سطح زنگ‌زدگی ($RAR\%$) و شاخص بخش‌بندی ماسک ($IoU, Dice$).
+5. `validation_lab_vs_vision`: ۲۰۰ نمونه هم‌زمان برداشت فیزیکی جهت مقایسه نتایج الک آزمایشگاهی روتپ با دوربین آنلاین جهت کالیبراسیون و جبران خطای دیداری ($R^2=0.974$).
+6. `gage_rr_study`: ۶۰ آزمایش تکرارپذیری و بازتولیدپذیری (Gage R&R) با ۳ اپراتور و ۱۰ پارت رفرنس کالیبره شده.
+
+---
+
+### 🚀 راهنمای شروع سریع (Quick Start)
+
+1. **مطالعه مبانی نظری:** ابتدا [فصل ۱۰ (01_Chapter_Text.md)](01_Chapter_Text.md) را مطالعه کنید تا با اصول فیزیک نور، سرعت شاتر دوربین‌های خطی/ماتریسی، و خطاهای هندسی بینایی آشنا شوید.
+2. **تمرین اکسل و پاورکوئری:** جهت پیاده‌سازی سریع کارگاهی فرمول‌ها و مصورسازی الگوها به [خودآموز اکسل (02_Tutorial_Excel_PowerQuery.md)](02_Tutorial_Excel_PowerQuery.md) مراجعه کنید.
+3. **تحلیل آماری و نمودارهای کنترل:** برای صحه‌گذاری سیستم اندازه‌گیری و پایش آنلاین SPC به [خودآموز مینی‌تب (03_Tutorial_Minitab.md)](03_Tutorial_Minitab.md) مراجعه فرمایید.
+4. **توسعه اسکریپت و اتوماسیون پایتون:** برای پیاده‌سازی الگوریتم‌های پیشرفته بخش‌بندی، رفع خطای Over-segmentation و یادگیری ماشین به [خودآموز پایتون (04_Tutorial_Python.md)](04_Tutorial_Python.md) بروید.
+5. **راه‌اندازی داشبورد مدیریتی:** جهت راه‌اندازی داشبورد تصمیم‌گیری آنلاین اپراتور و مدیریت نگهداری پیشگیرانه از [خودآموز پاوربی‌آی (05_Tutorial_PowerBI_DAX.md)](05_Tutorial_PowerBI_DAX.md) استفاده کنید.
