@@ -1,6 +1,6 @@
 # ⚙️ فصل دوم: مدار خردایش، طبقه‌بندی و پایش آماری SPC
 
-> **داده مرجع فصل:** [دانلود فایل اکسل آموزشی مشترک](../../shared-datasets/SMIC_QC_Data_Ch01_Ch02.xlsx)
+> **داده مرجع فصل:** [دانلود فایل اکسل آموزشی مشترک](../../shared-datasets/Data_Ch01_Ch02.xlsx)
 > **شیت‌های مورد استفاده:** `Ch02_Grinding_Mill_Energy`، `Ch02_Cyclone_PSD_Tromp`، `Ch02_Shift_KPI_Monitoring_SPC`
 
 ---
@@ -118,7 +118,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # 1. بارگذاری داده‌های مانیتورینگ
-excel_path = "../shared-datasets/SMIC_QC_Data_Ch01_Ch02.xlsx"
+excel_path = "../shared-datasets/Data_Ch01_Ch02.xlsx"
 
 df_energy = pd.read_excel(
     excel_path,
