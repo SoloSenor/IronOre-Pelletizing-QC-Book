@@ -1,6 +1,6 @@
 # 🔬 فصل اول: کانی‌شناسی، ترمودینامیک فازی و عناصر مزاحم در کنترل کیفیت سنگ‌آهن
 
-> **داده مرجع فصل:** [دانلود فایل اکسل آموزشی مشترک](../../shared-datasets/SMIC_QC_Data_Ch01_Ch02.xlsx)
+> **داده مرجع فصل:** [دانلود فایل اکسل آموزشی مشترک](https://github.com/SoloSenor/IronOre-Pelletizing-QC-Book/blob/main/chapter-01/Data_Ch01_Ch02.xlsx)
 > **شیت:** `Ch01_Feed_Mineralogy_Chemistry`
 
 ---
@@ -31,7 +31,7 @@
 
 #### مراحل
 
-1. فایل [SMIC_QC_Data_Ch01_Ch02.xlsx](../../shared-datasets/SMIC_QC_Data_Ch01_Ch02.xlsx) را باز کرده و به شیت `Ch01_Feed_Mineralogy_Chemistry` بروید.
+1. فایل [Data_Ch01_Ch02.xlsx](https://github.com/SoloSenor/IronOre-Pelletizing-QC-Book/blob/main/chapter-01/Data_Ch01_Ch02.xlsx) را باز کرده و به شیت `Ch01_Feed_Mineralogy_Chemistry` بروید.
 
 2. روی ستون `Magnetic_Factor_MF` ابزار **Conditional Formatting → Highlight Cells Rules** را اعمال کنید:
 
@@ -104,7 +104,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # 1. بارگذاری داده از فایل اکسل
-excel_path = "../shared-datasets/SMIC_QC_Data_Ch01_Ch02.xlsx"
+excel_path = "../shared-datasets/Data_Ch01_Ch02.xlsx"
 
 df = pd.read_excel(
     excel_path,
