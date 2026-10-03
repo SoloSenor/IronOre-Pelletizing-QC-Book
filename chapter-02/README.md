@@ -1,6 +1,6 @@
 # ⚙️ فصل دوم: مدار خردایش، طبقه‌بندی و پایش آماری SPC
 
-> **داده مرجع فصل:** [دانلود فایل اکسل آموزشی مشترک](../../shared-datasets/Data_Ch01_Ch02.xlsx)
+> **داده مرجع فصل:** [دانلود فایل اکسل آموزشی مشترک](https://github.com/SoloSenor/IronOre-Pelletizing-QC-Book/blob/main/chapter-02/Data_Ch01_Ch02.xlsx)
 > **شیت‌های مورد استفاده:** `Ch02_Grinding_Mill_Energy`، `Ch02_Cyclone_PSD_Tromp`، `Ch02_Shift_KPI_Monitoring_SPC`
 
 ---
