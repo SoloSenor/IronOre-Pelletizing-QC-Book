@@ -96,35 +96,64 @@ $$
 
 #### کد پایتون
 
-```python
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
 
-# 1. بارگذاری داده از فایل اکسل
-excel_path = "../shared-datasets/Data_Ch01_Ch02.xlsx"
+```python
+#فراخوانی کتابخانه ها
+# ============================================
+
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import os
+#ساخت پوشه خروجی
+# ============================================
+
+
+os.makedirs("outputs", exist_ok=True)
+
+#2. دریافت داده ها از فایل اکسل
+# ============================================
+
+excel_path = "/home/qc/Data_Ch01_Ch02.xlsx"
 
 df = pd.read_excel(
     excel_path,
     sheet_name="Ch01_Feed_Mineralogy_Chemistry"
 )
 
-# 2. انتخاب متغیرهای کلیدی
-features = [
-    "Fe_Tot",
-    "FeO",
-    "Satmagan",
+print("Data shape:", df.shape)
+
+df.head()
+
+# ============================================
+# 3. Numeric variables for Pearson correlation
+# ============================================
+
+features_numeric = [
+    "Fe_Tot_pct",
+    "FeO_pct",
+    "Satmagan_pct",
     "Magnetic_Factor_MF",
-    "LOI",
+    "SiO2_pct",
+    "Al2O3_pct",
+    "CaO_pct",
+    "MgO_pct",
+    "Basicity_B2",
     "P_pct",
-    "Alkalis_Na2O_K2O",
-    "Cake_Moisture_Impact"
+    "S_pct",
+    "Alkalis_Na2O_K2O_pct",
+    "LOI_pct"
 ]
 
-corr_matrix = df[features].corr(method="pearson")
+corr_matrix = df[features_numeric].corr(method="pearson")
 
-# 3. ترسیم نقشه حرارتی
-plt.figure(figsize=(10, 8))
+corr_matrix
+# ============================================
+# 4. Correlation heatmap
+# ============================================
+
+plt.figure(figsize=(12, 10))
 
 sns.heatmap(
     corr_matrix,
@@ -132,17 +161,20 @@ sns.heatmap(
     cmap="vlag",
     fmt=".2f",
     vmin=-1,
-    vmax=1
+    vmax=1,
+    square=True,
+    linewidths=0.5
 )
 
 plt.title(
-    "Correlation Matrix: Mineralogy vs Quality KPIs (SMIC)",
+    "Pearson Correlation Matrix: Feed Chemistry & Mineralogical Indicators",
     fontsize=14
 )
 
 plt.tight_layout()
 
-# 4. ذخیره خروجی
+os.makedirs("outputs", exist_ok=True)
+
 plt.savefig(
     "outputs/ch01_correlation_heatmap.png",
     dpi=300,
@@ -153,6 +185,8 @@ plt.show()
 ```
 
 #### خروجی مورد انتظار
+
+<img width="3394" height="3036" alt="ch01_correlation_heatmap" src="https://github.com/user-attachments/assets/8128bd42-4baf-43de-b271-96b191911733" />
 
 نقشه حرارتی ایجادشده امکان بررسی سریع روابط خطی بین متغیرها را فراهم می‌کند. مقدار ضریب همبستگی پیرسون در بازه زیر قرار دارد:
 
