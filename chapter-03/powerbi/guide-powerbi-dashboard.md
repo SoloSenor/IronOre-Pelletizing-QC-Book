@@ -166,7 +166,6 @@ Slicerهای پیشنهادی:
 * Fe Recovery
 * Cake Moisture
 * Overflow Turbidity
-* Fe Balance Error
 
 ### ردیف دوم — فرآیند
 
@@ -177,7 +176,6 @@ Slicerهای پیشنهادی:
 ### ردیف سوم — تحلیل علل
 
 * Slimes vs Cake Moisture
-* Vacuum vs Cake Moisture
 * Fe Grade vs Fe Recovery
 * Balance Error by Shift
 
@@ -185,7 +183,5 @@ Slicerهای پیشنهادی:
 
 * تعداد رکوردهای OOS
 * درصد موازنه‌های نامعتبر
-* تعداد سیگنال‌های SPC
-* آخرین وضعیت فرآیند
 
 این ساختار Dashboard را از یک صفحه نمایش KPI به یک ابزار **Process Diagnosis** نزدیک می‌کند.
