@@ -4,7 +4,7 @@
 
 > **مجموعه آموزشی:** کنترل کیفیت داده‌محور و مهندسی فرآیند در کارخانه‌های کنسانتره و گندله سنگ‌آهن
 > **مؤلف:** امین
-> **داده‌های همراه:** [دانلود فایل اکسل داده‌های آموزشی فصل ۳](https://github.com/SoloSenor/IronOre-Pelletizing-QC-Book/blob/main/chapter-03/%D8%AF%D8%A7%D8%AF%D9%87%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D9%81%D8%B5%D9%84%20%DB%B3%20%D9%81%D8%B1%D8%A2%D9%88%D8%B1%DB%8C%20%E2%80%94%20%D8%AC%D8%AF%D8%A7%DB%8C%D8%B4%20%D9%85%D8%BA%D9%86%D8%A7%D8%B7%DB%8C%D8%B3%DB%8C%D8%8C%20%D9%81%D9%84%D9%88%D8%AA%D8%A7%D8%B3%DB%8C%D9%88%D9%86%D8%8C%20%D8%AA%DB%8C%DA%A9%D9%86%D8%B1%20%D9%88%20%DA%A9%DB%8C%DA%A9%20%D9%81%DB%8C%D9%84%D8%AA%D8%B1_1790944631687.xlsx)
+> **داده‌های همراه:** [دانلود فایل اکسل داده‌های آموزشی فصل ۳](https://github.com/SoloSenor/IronOre-Pelletizing-QC-Book/blob/main/chapter-03/datasets/%D8%AF%D8%A7%D8%AF%D9%87%20%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C%20%D9%81%D8%B5%D9%84%20%DB%B3%20%D9%81%D8%B1%D8%A2%D9%88%D8%B1%DB%8C%20%E2%80%94%20%D8%AC%D8%AF%D8%A7%DB%8C%D8%B4%20%D9%85%D8%BA%D9%86%D8%A7%D8%B7%DB%8C%D8%B3%DB%8C%D8%8C%20%D9%81%D9%84%D9%88%D8%AA%D8%A7%D8%B3%DB%8C%D9%88%D9%86%D8%8C%20%D8%AA%DB%8C%DA%A9%D9%86%D8%B1%20%D9%88%20%DA%A9%DB%8C%DA%A9%20%D9%81%DB%8C%D9%84%D8%AA%D8%B1_1790944631687.xlsx)
 
 ---
 
