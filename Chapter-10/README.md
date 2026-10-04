@@ -1,5 +1,5 @@
 # Chapter 10: Machine Vision & Dynamic Image Analysis in Iron Ore Pelletizing Quality Control
-## کنترل کیفیت آنلاین گندله‌سازی سنگ‌آهن با بینایی ماشین و آنالیز دینامیک تصویر
+## فصل ۱۰ — بینایی ماشین صنعتی در گندله‌سازی
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](04_Tutorial_Python.md)
 [![Minitab 21+](https://img.shields.io/badge/Minitab-21%2B-brightgreen.svg)](03_Tutorial_Minitab.md)
