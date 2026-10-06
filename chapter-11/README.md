@@ -42,7 +42,6 @@
 
 ## 🗂️ دسترسی سریع
 
-* 📖 [مطالعه متن کامل و تئوری متالورژی فصل ۱۱](./chapter_text.md)
 * 📊 [فایل داده‌های آموزشی فصل ۱۱](../data/ch11_ccs_blackcore_training_dataset.xlsx)
 * 📋 [فرهنگ داده‌ها و مشخصات متغیرها](./data/data_dictionary.md)
 
@@ -52,10 +51,7 @@
 
 | ابزار        | هدف تحلیلی                                                    | راهنما                                                 |
 | :----------- | :------------------------------------------------------------ | :----------------------------------------------------- |
-| **Excel**    | پاکسازی، Feature Engineering، رگرسیون و محاسبه ریسک توزیعی    | [راهنمای Excel](./tutorials/01_Excel_Tutorial.md)      |
-| **Minitab**  | شناسایی توزیع، تحلیل صدک پایین، رگرسیون و Logistic Regression | [راهنمای Minitab](./tutorials/02_Minitab_Tutorial.md)  |
 | **Python**   | پیش‌بینی `μ` و `σ`، برآورد ریسک، مدل Black Core و SHAP        | [راهنمای Python](./tutorials/03_Python_Tutorial.md)    |
-| **Power BI** | پایش ریسک، روند CCS، نرخ گندله ضعیف و شاخص Black Core         | [راهنمای Power BI](./tutorials/04_PowerBI_Tutorial.md) |
 
 ---
 
