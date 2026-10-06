@@ -2,9 +2,6 @@
 ## فصل ۱۰ — بینایی ماشین صنعتی در گندله‌سازی
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](04_Tutorial_Python.md)
-[![Minitab 21+](https://img.shields.io/badge/Minitab-21%2B-brightgreen.svg)](03_Tutorial_Minitab.md)
-[![Excel & Power Query](https://img.shields.io/badge/Excel-PowerQuery%202021%2F365-success.svg)](02_Tutorial_Excel_PowerQuery.md)
-[![Power BI](https://img.shields.io/badge/Power%20BI-DAX%20Dashboard-yellow.svg)](05_Tutorial_PowerBI_DAX.md)
 [![Dataset](https://img.shields.io/badge/Dataset-Chapter10__MachineVision__Pelletizing__Dataset.xlsx-orange.svg)](../Chapter10_MachineVision_Pelletizing_Dataset.xlsx)
 
 ---
@@ -16,10 +13,8 @@
 | ردیف | نام سند / خودآموز | فرمت / ابزار | شرح محتوا و اهداف کلیدی |
 | :--- | :--- | :--- | :--- |
 | **۱** | [**01_Chapter_Text.md**](01_Chapter_Text.md) | Markdown جامع مهندسی | متن کامل و مرجع فصل ۱۰: معماری بینایی صنعتی، سیستم نوری High-Speed Strobe، فیلتراسیون کانوولوشنال، تصحیح خطای تحدب پلت (Convex Bias Model)، اعتبارسنجی با الک استاندارد روتپ (Ro-Tap ISO 4701)، و پایش بینایی وضعیت لاینرها (CBM). |
-| **۲** | [**02_Tutorial_Excel_PowerQuery.md**](02_Tutorial_Excel_PowerQuery.md) | Excel & Power Query | پاک‌سازی خودکار خطاهای نوری با Power Query، محاسبه فرمول گردی ($Circularity$) و قطر معادل، پیاده‌سازی مدل رگرسیونی کالیبراسیون الک در اکسل، هشداردهی دینامیک توقف خط و منحنی تجمعی PSD. |
-| **۳** | [**03_Tutorial_Minitab.md**](03_Tutorial_Minitab.md) | Minitab Statistical Software | آنالیز خطای اندازه‌گیری سیستم بینایی (Gage R&R ANOVA)، نمودارهای کنترل I-MR و $ar{X}-S$ برای $d_{50}$ و ذرات ریزدانه، آزمون‌های نرمال بودن، و اعتبارسنجی رگرسیون خطی بینایی در برابر آزمایشگاه. |
-| **۴** | [**04_Tutorial_Python.md**](04_Tutorial_Python.md) | Python (Pandas, OpenCV, Scikit-Learn) | خط لوله اجرایی پردازش تصویر: بخش‌بندی Watershed، استخراج ویژگی‌های مورفولوژیک گندله، مدل رگرسیون Huber/Ridge برای کالیبراسیون الک آزمایشگاهی، و پایپ‌لاین تشخیص خطای آنلاین و ارسال آلرت. |
-| **۵** | [**05_Tutorial_PowerBI_DAX.md**](05_Tutorial_PowerBI_DAX.md) | Power BI Desktop & DAX | مدل‌سازی ستاره‌ای داده، کدنویسی سنجه‌های پیشرفته DAX (محاسبه درصد توزیع استاندارد ۹ تا ۱۶ میلی‌متر، میانگین متحرک ۲۴ ساعته $d_{50}$، شاخص وضعیت لاینرها RAR%، و طراحی داشبورد مانیتورینگ بلادرنگ). |
+| **2** | [**04_Tutorial_Python.md**](04_Tutorial_Python.md) | Python (Pandas, OpenCV, Scikit-Learn) | خط لوله اجرایی پردازش تصویر: بخش‌بندی Watershed، استخراج ویژگی‌های مورفولوژیک گندله، مدل رگرسیون Huber/Ridge برای کالیبراسیون الک آزمایشگاهی، و پایپ‌لاین تشخیص خطای آنلاین و ارسال آلرت. |
+
 
 ---
 
@@ -30,10 +25,7 @@ Chapter10_GitHub_Package/
 │
 ├── README.md                           # صفحه فرود، معرفی ساختار، پیوندها و راهنمای سریع
 ├── 01_Chapter_Text.md                  # متن مرجع و جامع فصل ۱۰ همراه با فرمول‌ها و ارجاعات نرم‌افزاری
-├── 02_Tutorial_Excel_PowerQuery.md     # خودآموز جامع اکسل و پاورکوئری
-├── 03_Tutorial_Minitab.md              # خودآموز مهندسی کنترل کیفیت آماری در مینی‌تب
 ├── 04_Tutorial_Python.md               # اسکریپت‌های پایتون و پایپ‌لاین پردازش تصویر
-├── 05_Tutorial_PowerBI_DAX.md          # خودآموز طراحی داشبورد هوش تجاری و کدنویسی DAX
 │
 └── dataset/
     └── Chapter10_MachineVision_Pelletizing_Dataset.xlsx  # دیتاست آموزشی ۶ شیت شامل ۱۰,۰۰۰ گندله و ۳۳۶ رکورد ساعتی
