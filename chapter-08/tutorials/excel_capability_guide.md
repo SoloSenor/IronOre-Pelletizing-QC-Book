@@ -72,4 +72,3 @@ Y = (X^λ − 1) / λ
 ```excel
 =(AVERAGE(Y_range) - LSL_Y) / (3 * STDEV.S(Y_range))
 ```
-*(نتیجه Cpl پس از تبدیل باکس-کاکس: حدود ۰٫۴۹۸)*
