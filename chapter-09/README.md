@@ -2,10 +2,6 @@
 ## پیش‌بینی بلادرنگ دانه‌بندی و بلین با توان آسیاب، دانسیته و پارامترهای فرآیندی
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](03_Python/)
-[![Excel Model](https://img.shields.io/badge/Excel-Supported-success.svg)](01_Excel/)
-[![Minitab Ready](https://img.shields.io/badge/Minitab-V19%2B-orange.svg)](02_Minitab/)
-[![Power BI](https://img.shields.io/badge/PowerBI-Dashboard-yellow.svg)](04_PowerBI/)
-
 ---
 
 ## 📌 مقدمه و بیان مسئله: گلوگاه تاخیر فاز (Dead Time) در QC سنتی
@@ -52,8 +48,4 @@
 ---
 
 ## 🛠️ راهنماهای گام‌به‌گام پیاده‌سازی بر اساس نرم‌افزار
-
-* 📊 **[آموزش پیاده‌سازی در مایکروسافت اکسل](01_Excel/Excel_Guide.md)**
-* 📈 **[آموزش پیاده‌سازی و تحلیل آماری در مینی‌تب (Minitab)](02_Minitab/Minitab_Guide.md)**
 * 🐍 **[پایپ‌لاین یادگیری ماشین در پایتون (Python & XGBoost)](03_Python/Python_Tutorial.md)**
-* 📉 **[طراحی داشبورد مانیتورینگ بلادرنگ در پاور بی‌آی (Power BI)](04_PowerBI/PowerBI_Guide.md)**
